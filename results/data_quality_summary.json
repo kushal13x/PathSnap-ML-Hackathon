@@ -1,0 +1,240 @@
+{
+  "overall": {
+    "num_trips": 90,
+    "total_gps_observations": 227577,
+    "gps_per_trip": {
+      "min": 262,
+      "median": 1496.5,
+      "mean": 2528.63,
+      "max": 19313
+    },
+    "nodes_per_trip": {
+      "min": 299,
+      "median": 9305.0,
+      "max": 155003,
+      "unique_counts": 90
+    },
+    "arcs_per_trip": {
+      "min": 649,
+      "median": 18761.5,
+      "max": 307392,
+      "unique_counts": 90
+    },
+    "route_len_per_trip": {
+      "min": 59,
+      "median": 272.5,
+      "mean": 386.81,
+      "max": 2266
+    },
+    "quality_anomalies": {
+      "total_track_malformed": 0,
+      "total_track_nan_inf": 0,
+      "total_nodes_malformed": 0,
+      "total_nodes_nan_inf": 0,
+      "total_arcs_malformed": 0,
+      "total_route_malformed": 0,
+      "total_coord_out_of_bounds": 0,
+      "total_invalid_arc_endpoints": 0,
+      "total_invalid_route_arcs": 0,
+      "total_non_monotonic_dt": 0,
+      "trips_with_non_monotonic_dt": 0
+    },
+    "temporal": {
+      "total_intervals": 227487,
+      "total_dt_1s": 219939,
+      "overall_pct_dt_1s": 96.682,
+      "total_dt_gt_1s": 7548,
+      "total_dt_gt_5s": 1260,
+      "total_dt_gt_10s": 617,
+      "total_dt_gt_30s": 135,
+      "max_dt_s": 153064.0,
+      "trips_with_gaps_gt_5s": 47
+    },
+    "spatial_and_noise": {
+      "lon_range": [
+        -100.418538,
+        137.237029
+      ],
+      "lat_range": [
+        -34.640291,
+        61.69959
+      ],
+      "track_length_km_median": 24.066,
+      "track_length_km_max": 169.254,
+      "gps_to_road_median_m_across_trips": 4.16,
+      "gps_to_road_max_m": 240.73,
+      "gps_to_route_median_m_across_trips": 4.53,
+      "gps_to_route_max_m": 569.74,
+      "trips_with_speed_gt_150_kmh": 60
+    },
+    "route_validity": {
+      "trips_with_100pct_continuity": 79,
+      "trips_with_disconnected_route": 11,
+      "total_disconnected_transitions": 14,
+      "total_same_arc_repeats": 0,
+      "total_u_turns": 54,
+      "max_route_gap_m": 597.81,
+      "min_route_recall_50m_pct": 12.76,
+      "min_route_recall_100m_pct": 16.34
+    }
+  },
+  "train": {
+    "num_trips": 80,
+    "total_gps_observations": 208417,
+    "gps_per_trip": {
+      "min": 361,
+      "median": 1529.0,
+      "mean": 2605.21,
+      "max": 19313
+    },
+    "nodes_per_trip": {
+      "min": 299,
+      "median": 9608.0,
+      "max": 155003,
+      "unique_counts": 80
+    },
+    "arcs_per_trip": {
+      "min": 649,
+      "median": 19526.5,
+      "max": 307392,
+      "unique_counts": 80
+    },
+    "route_len_per_trip": {
+      "min": 59,
+      "median": 280.0,
+      "mean": 391.7,
+      "max": 2266
+    },
+    "quality_anomalies": {
+      "total_track_malformed": 0,
+      "total_track_nan_inf": 0,
+      "total_nodes_malformed": 0,
+      "total_nodes_nan_inf": 0,
+      "total_arcs_malformed": 0,
+      "total_route_malformed": 0,
+      "total_coord_out_of_bounds": 0,
+      "total_invalid_arc_endpoints": 0,
+      "total_invalid_route_arcs": 0,
+      "total_non_monotonic_dt": 0,
+      "trips_with_non_monotonic_dt": 0
+    },
+    "temporal": {
+      "total_intervals": 208337,
+      "total_dt_1s": 201053,
+      "overall_pct_dt_1s": 96.504,
+      "total_dt_gt_1s": 7284,
+      "total_dt_gt_5s": 1216,
+      "total_dt_gt_10s": 590,
+      "total_dt_gt_30s": 133,
+      "max_dt_s": 153064.0,
+      "trips_with_gaps_gt_5s": 45
+    },
+    "spatial_and_noise": {
+      "lon_range": [
+        -100.418538,
+        137.237029
+      ],
+      "lat_range": [
+        -34.640291,
+        61.267258
+      ],
+      "track_length_km_median": 24.066,
+      "track_length_km_max": 169.254,
+      "gps_to_road_median_m_across_trips": 4.13,
+      "gps_to_road_max_m": 240.73,
+      "gps_to_route_median_m_across_trips": 4.51,
+      "gps_to_route_max_m": 569.74,
+      "trips_with_speed_gt_150_kmh": 52
+    },
+    "route_validity": {
+      "trips_with_100pct_continuity": 70,
+      "trips_with_disconnected_route": 10,
+      "total_disconnected_transitions": 13,
+      "total_same_arc_repeats": 0,
+      "total_u_turns": 46,
+      "max_route_gap_m": 597.81,
+      "min_route_recall_50m_pct": 12.76,
+      "min_route_recall_100m_pct": 16.34
+    }
+  },
+  "student_test": {
+    "num_trips": 10,
+    "total_gps_observations": 19160,
+    "gps_per_trip": {
+      "min": 262,
+      "median": 1420.0,
+      "mean": 1916.0,
+      "max": 3958
+    },
+    "nodes_per_trip": {
+      "min": 1770,
+      "median": 6596.5,
+      "max": 26635,
+      "unique_counts": 10
+    },
+    "arcs_per_trip": {
+      "min": 3577,
+      "median": 13145.0,
+      "max": 56027,
+      "unique_counts": 10
+    },
+    "route_len_per_trip": {
+      "min": 95,
+      "median": 250.0,
+      "mean": 347.7,
+      "max": 1323
+    },
+    "quality_anomalies": {
+      "total_track_malformed": 0,
+      "total_track_nan_inf": 0,
+      "total_nodes_malformed": 0,
+      "total_nodes_nan_inf": 0,
+      "total_arcs_malformed": 0,
+      "total_route_malformed": 0,
+      "total_coord_out_of_bounds": 0,
+      "total_invalid_arc_endpoints": 0,
+      "total_invalid_route_arcs": 0,
+      "total_non_monotonic_dt": 0,
+      "trips_with_non_monotonic_dt": 0
+    },
+    "temporal": {
+      "total_intervals": 19150,
+      "total_dt_1s": 18886,
+      "overall_pct_dt_1s": 98.621,
+      "total_dt_gt_1s": 264,
+      "total_dt_gt_5s": 44,
+      "total_dt_gt_10s": 27,
+      "total_dt_gt_30s": 2,
+      "max_dt_s": 210.0,
+      "trips_with_gaps_gt_5s": 2
+    },
+    "spatial_and_noise": {
+      "lon_range": [
+        -93.424337,
+        77.271115
+      ],
+      "lat_range": [
+        42.645529,
+        61.69959
+      ],
+      "track_length_km_median": 20.936,
+      "track_length_km_max": 71.716,
+      "gps_to_road_median_m_across_trips": 4.31,
+      "gps_to_road_max_m": 47.35,
+      "gps_to_route_median_m_across_trips": 4.59,
+      "gps_to_route_max_m": 105.95,
+      "trips_with_speed_gt_150_kmh": 8
+    },
+    "route_validity": {
+      "trips_with_100pct_continuity": 9,
+      "trips_with_disconnected_route": 1,
+      "total_disconnected_transitions": 1,
+      "total_same_arc_repeats": 0,
+      "total_u_turns": 8,
+      "max_route_gap_m": 15.07,
+      "min_route_recall_50m_pct": 99.32,
+      "min_route_recall_100m_pct": 99.92
+    }
+  },
+  "elapsed_seconds": 28.13
+}

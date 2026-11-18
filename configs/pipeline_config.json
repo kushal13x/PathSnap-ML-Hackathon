@@ -1,0 +1,30 @@
+{
+  "candidate_generation": {
+    "k_candidates": 20,
+    "radius_m": 100.0,
+    "short_arc_threshold_m": 300.0
+  },
+  "label_alignment": {
+    "sigma_dist_m": 15.0,
+    "sigma_heading_deg": 45.0,
+    "moving_speed_threshold_mps": 2.0,
+    "step_penalty": 0.05,
+    "valid_label_max_dist_m": 50.0,
+    "ambiguous_margin_cost": 0.25
+  },
+  "validation": {
+    "method": "GroupShuffleSplit",
+    "val_size": 0.2,
+    "random_state": 42
+  },
+  "baseline_model": {
+    "model_type": "SGDClassifier",
+    "loss": "log_loss",
+    "penalty": "l2",
+    "alpha": 0.0001,
+    "class_weight": "balanced",
+    "max_iter": 1000,
+    "tol": 0.001,
+    "random_state": 42
+  }
+}

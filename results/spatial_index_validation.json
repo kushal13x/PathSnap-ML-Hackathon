@@ -1,0 +1,56 @@
+[
+  {
+    "sampled_observations": 40,
+    "missed_top1_count": 0,
+    "missed_topk_count": 0,
+    "max_distance_diff_m": 0.0,
+    "split": "train",
+    "trip_id": "00000001",
+    "n_long_arcs_gt_300m": 1351
+  },
+  {
+    "sampled_observations": 40,
+    "missed_top1_count": 0,
+    "missed_topk_count": 0,
+    "max_distance_diff_m": 0.0,
+    "split": "train",
+    "trip_id": "00000019",
+    "n_long_arcs_gt_300m": 1890
+  },
+  {
+    "sampled_observations": 40,
+    "missed_top1_count": 0,
+    "missed_topk_count": 0,
+    "max_distance_diff_m": 0.0,
+    "split": "train",
+    "trip_id": "00000054",
+    "n_long_arcs_gt_300m": 164
+  },
+  {
+    "sampled_observations": 40,
+    "missed_top1_count": 0,
+    "missed_topk_count": 0,
+    "max_distance_diff_m": 0.0,
+    "split": "train",
+    "trip_id": "00000090",
+    "n_long_arcs_gt_300m": 16
+  },
+  {
+    "sampled_observations": 40,
+    "missed_top1_count": 0,
+    "missed_topk_count": 0,
+    "max_distance_diff_m": 0.0,
+    "split": "student_test",
+    "trip_id": "00000056",
+    "n_long_arcs_gt_300m": 58
+  },
+  {
+    "sampled_observations": 40,
+    "missed_top1_count": 0,
+    "missed_topk_count": 0,
+    "max_distance_diff_m": 0.0,
+    "split": "student_test",
+    "trip_id": "00000076",
+    "n_long_arcs_gt_300m": 63
+  }
+]

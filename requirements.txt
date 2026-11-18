@@ -1,0 +1,17 @@
+# Core scientific computing & data processing (Phase 0 & Phase 1)
+numpy>=2.0.0
+pandas>=2.2.0
+scipy>=1.14.0
+pyarrow>=18.0.0
+
+# Machine learning & serialization (Phase 1)
+scikit-learn>=1.5.0
+joblib>=1.4.0
+
+# Exploratory visualization & interactive mapping (Phase 0)
+matplotlib>=3.9.0
+folium>=0.18.0
+
+# Resource telemetry & automated testing
+psutil>=6.0.0
+pytest>=8.0.0
