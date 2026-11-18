@@ -132,7 +132,7 @@ See [`reports/deployment_guide.md`](file:///c:/Users/Kushal/Desktop/ML%20Hackath
 
 ## 6. Automated Tests & Excluded Data
 
-Run the test suite (note: offline training/candidate-parquet tests require local training data, while API, HMM/Viterbi, and `student_test` inference tests run directly):
+Run the test suite (note: offline training/candidate-parquet tests require local training data,while API, HMM/Viterbi, and `student_test` inference tests run directly):
 ```powershell
 python -m pytest tests/ -v
 ```
