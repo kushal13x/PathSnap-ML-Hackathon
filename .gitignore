@@ -1,10 +1,15 @@
-# Organiser-provided datasets, archives, and generated Parquet partitions
-data/raw/
+# Organiser-provided training/evaluator datasets, archives, and generated Parquet partitions
+# Keep ONLY non-ground-truth inference files (.track, .nodes, .arcs) in data/raw/student_test/
+data/raw/*
+!data/raw/student_test/
+data/raw/student_test/**/*
+!data/raw/student_test/*/
+!data/raw/student_test/*/*.track
+!data/raw/student_test/*/*.nodes
+!data/raw/student_test/*/*.arcs
+
 data/processed/
 source_zips/
-*.track
-*.nodes
-*.arcs
 *.route
 *.parquet
 *.zip

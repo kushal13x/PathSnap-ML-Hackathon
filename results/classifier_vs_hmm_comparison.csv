@@ -1,0 +1,5 @@
+split,method,num_trips,total_gps_obs,total_valid_obs,invalid_label_pct_micro,no_candidate_pct_micro,candidate_recall_valid_pct_micro,candidate_miss_rate_valid_pct_micro,top1_acc_valid_pct_micro,top5_acc_valid_pct_micro,top1_acc_valid_pct_macro,top1_acc_all_obs_pct_micro,route_step_continuity_pct_mean,route_transition_continuity_pct_mean,total_invalid_transitions,mean_reconstructed_route_continuity_pct,mean_arc_set_f1_pct,mean_length_weighted_f1_pct,mean_sequence_lcs_similarity_pct,total_inserted_connectors,total_runtime_s
+train_val,classifier_only,16,39460,38652,2.05,0.04,99.85,0.15,82.33,98.33,85.24,81.62,92.56,77.09,2231,77.08,85.14,88.79,72.77,0,1.087
+train_val,hmm_viterbi,16,39460,38652,2.05,0.04,99.85,0.15,87.49,98.34,89.28,86.88,97.16,87.99,747,99.32,92.15,94.72,87.99,1259,19.556
+student_test,classifier_only,10,19160,19133,0.14,0.0,99.98,0.02,83.88,98.87,85.19,83.76,93.27,77.25,1284,77.25,86.77,91.49,72.39,0,0.53
+student_test,hmm_viterbi,10,19160,19133,0.14,0.0,99.98,0.02,88.73,98.91,89.14,88.61,97.35,87.32,471,99.92,95.31,97.52,91.42,621,11.258

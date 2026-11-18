@@ -8,10 +8,12 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import (
     accuracy_score,
+    average_precision_score,
     f1_score,
     log_loss,
     precision_score,
     recall_score,
+    roc_auc_score,
 )
 
 
@@ -23,12 +25,15 @@ def compute_candidate_binary_metrics(
     """Compute binary candidate classification metrics on valid observations."""
     y_pred = (y_prob >= threshold).astype(np.int8)
     clipped_prob = np.clip(y_prob, 1e-7, 1.0 - 1e-7)
+    has_both_classes = len(np.unique(y_true)) == 2
     return {
         "candidate_accuracy": round(float(accuracy_score(y_true, y_pred)), 4),
         "candidate_precision": round(float(precision_score(y_true, y_pred, zero_division=0)), 4),
         "candidate_recall": round(float(recall_score(y_true, y_pred, zero_division=0)), 4),
         "candidate_macro_f1": round(float(f1_score(y_true, y_pred, average="macro", zero_division=0)), 4),
         "candidate_positive_f1": round(float(f1_score(y_true, y_pred, pos_label=1, zero_division=0)), 4),
+        "candidate_roc_auc": round(float(roc_auc_score(y_true, y_prob)), 4) if has_both_classes else float("nan"),
+        "candidate_pr_auc": round(float(average_precision_score(y_true, y_prob)), 4) if has_both_classes else float("nan"),
         "candidate_log_loss": round(float(log_loss(y_true, clipped_prob, labels=[0, 1])), 4),
     }
 

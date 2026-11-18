@@ -1,0 +1,70 @@
+{
+  "emission": {
+    "prob_eps": 1e-06,
+    "emit_weight": 1.5
+  },
+  "transition": {
+    "gap_threshold_s": 30.0,
+    "beta_m": 20.0,
+    "uturn_penalty": 4.0,
+    "backward_jitter_penalty": 1.5,
+    "disconnected_penalty": 15.0,
+    "max_route_search_m": 2500.0
+  },
+  "calibration_trials_on_train_fit": [
+    {
+      "emit_weight": 1.0,
+      "beta_m": 15.0,
+      "uturn_penalty": 4.0,
+      "top1_valid_pct": 95.73,
+      "length_weighted_f1_pct": 98.53,
+      "route_continuity_pct": 99.62,
+      "combined_score": 97.131
+    },
+    {
+      "emit_weight": 1.0,
+      "beta_m": 25.0,
+      "uturn_penalty": 4.0,
+      "top1_valid_pct": 95.7,
+      "length_weighted_f1_pct": 98.28,
+      "route_continuity_pct": 99.62,
+      "combined_score": 96.991
+    },
+    {
+      "emit_weight": 1.5,
+      "beta_m": 20.0,
+      "uturn_penalty": 4.0,
+      "top1_valid_pct": 95.86,
+      "length_weighted_f1_pct": 98.42,
+      "route_continuity_pct": 99.62,
+      "combined_score": 97.142
+    },
+    {
+      "emit_weight": 1.5,
+      "beta_m": 25.0,
+      "uturn_penalty": 6.0,
+      "top1_valid_pct": 95.76,
+      "length_weighted_f1_pct": 98.24,
+      "route_continuity_pct": 99.62,
+      "combined_score": 96.999
+    },
+    {
+      "emit_weight": 2.0,
+      "beta_m": 20.0,
+      "uturn_penalty": 5.0,
+      "top1_valid_pct": 95.86,
+      "length_weighted_f1_pct": 98.2,
+      "route_continuity_pct": 99.62,
+      "combined_score": 97.029
+    },
+    {
+      "emit_weight": 2.0,
+      "beta_m": 30.0,
+      "uturn_penalty": 6.0,
+      "top1_valid_pct": 95.71,
+      "length_weighted_f1_pct": 97.85,
+      "route_continuity_pct": 99.63,
+      "combined_score": 96.779
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+model_key,display_name,cv_top1_mean,cv_top1_std,cv_top5_mean,cv_step_cont_mean,cv_macro_f1_mean,cv_macro_f1_std,cv_roc_auc_mean,cv_pr_auc_mean,cv_log_loss_mean,cv_fit_time_mean_s
+sgd_logistic,SGD Logistic Regression,81.49,3.23,98.17,90.6,0.8013,0.0149,0.9824,0.8136,0.1823,3.19
+decision_tree,Decision Tree,81.79,3.44,96.86,89.67,0.8402,0.0202,0.9739,0.8816,0.1537,15.53
+random_forest,Random Forest,82.25,3.21,98.32,91.29,0.8787,0.0156,0.9893,0.911,0.1003,62.51
+extra_trees,Extra Trees,81.43,3.07,98.3,90.44,0.8504,0.0158,0.9881,0.9004,0.1324,19.54
+hist_gradient_boosting,HistGradientBoosting,82.81,3.42,98.37,91.6,0.9045,0.0186,0.9897,0.9136,0.0628,12.83
